@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réservation — Maison Lumière</title>
+  <meta name="description" content="Réservez votre séjour à Maison Lumière. Choisissez vos dates et votre suite." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header scrolled">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 flex items-center justify-between h-20">
+      <a href="index.html" class="flex flex-col leading-none">
+        <span class="brand-name font-serif text-2xl tracking-wide">Maison Lumière</span>
+        <span class="eyebrow mt-1" style="font-size:0.55rem">Hôtel & Spa</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html" data-nav="index.html" class="nav-link">Accueil</a>
+        <a href="suites.html" data-nav="suites.html" class="nav-link">Suites</a>
+        <a href="reservation.html" data-nav="reservation.html" class="nav-link">Réservation</a>
+        <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="reservation.html" class="desktop-cta">Réserver</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu mobile-only">
+    <span class="eyebrow">Maison Lumière</span>
+    <nav class="flex flex-col items-center gap-8">
+      <a href="index.html" class="menu-link">Accueil</a>
+      <a href="suites.html" class="menu-link">Suites</a>
+      <a href="reservation.html" class="menu-link">Réservation</a>
+      <a href="contact.html" class="menu-link">Contact</a>
+    </nav>
+    <a href="reservation.html" class="btn-dark mt-6">Réserver maintenant</a>
+    <div class="menu-contact">+33 1 23 45 67 89<br />concierge@maisonlumiere.fr</div>
+  </div>
+
+  <section class="pt-40 pb-16 px-6 text-center">
+    <span class="eyebrow">Conciergerie</span>
+    <h1 class="mt-6 text-5xl md:text-6xl">Réservez votre séjour</h1>
+    <span class="gold-divider mt-8"></span>
+    <p class="mt-8 max-w-xl mx-auto text-muted-fg">Composez votre expérience. Notre équipe vous confirmera votre réservation sous 24 heures.</p>
+  </section>
+
+  <section class="px-6 pb-32">
+    <div class="mx-auto max-w-3xl shadow-luxe p-10 md:p-16" style="background:#fff">
+
+      <!--
+        TIP : pour brancher sur ton backend PHP/MySQL, modifie l'attribut action ci-dessous
+        et retire l'event handler JS qui empêche la soumission (dans assets/js/main.js).
+        Exemple : <form id="reservation-form" action="traitements/reserver.php" method="POST">
+      -->
+      <form id="reservation-form" class="space-y-8" action="#" method="POST">
+        <div class="grid md:grid-cols-2 gap-6">
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Nom complet <span class="text-gold">*</span></span>
+            <input required name="nom" class="field-input" />
+          </label>
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Email <span class="text-gold">*</span></span>
+            <input required type="email" name="email" class="field-input" />
+          </label>
+        </div>
+
+        <label class="block">
+          <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Téléphone</span>
+          <input name="telephone" class="field-input" />
+        </label>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Arrivée <span class="text-gold">*</span></span>
+            <input required type="date" name="arrivee" class="field-input" />
+          </label>
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Départ <span class="text-gold">*</span></span>
+            <input required type="date" name="depart" class="field-input" />
+          </label>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Voyageurs</span>
+            <select name="adultes" class="field-input">
+              <option value="1">1 adulte</option>
+              <option value="2" selected>2 adultes</option>
+              <option value="3">3 adultes</option>
+              <option value="4">4 adultes</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Suite souhaitée</span>
+            <select name="chambre" class="field-input">
+              <option value="junior">Suite Junior — dès 480€</option>
+              <option value="deluxe" selected>Suite Deluxe — dès 780€</option>
+              <option value="presidentielle">Suite Présidentielle — dès 1 950€</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="block">
+          <span class="eyebrow block mb-2" style="color:var(--muted-fg)">Demandes particulières</span>
+          <textarea rows="4" name="message" class="field-input"></textarea>
+        </label>
+
+        <button type="submit" class="btn-dark w-full" style="display:block; text-align:center">Envoyer ma demande</button>
+      </form>
+
+      <div id="reservation-success" style="display:none" class="text-center py-12">
+        <div class="font-serif text-4xl text-gold">Merci.</div>
+        <span class="gold-divider mt-6"></span>
+        <p class="mt-6 text-muted-fg">Votre demande a bien été reçue, <span id="success-name" class="text-onyx"></span>. Notre conciergerie vous contactera très prochainement à <span id="success-email" class="text-onyx"></span>.</p>
+        <button id="new-reservation" class="mt-10 px-8 py-3 border border-onyx text-xs uppercase transition-elegant hover:bg-onyx hover:text-ivory" style="letter-spacing:0.3em">Nouvelle demande</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 py-20 grid md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <div class="font-serif text-3xl">Maison Lumière</div>
+        <p class="mt-4 text-sm max-w-sm" style="opacity:0.6">Une parenthèse intemporelle au cœur de l'élégance.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:rgba(246,241,231,0.6)">Navigation</div>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="index.html">Accueil</a></li><li><a href="suites.html">Suites</a></li>
+          <li><a href="reservation.html">Réservation</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:rgba(246,241,231,0.6)">Contact</div>
+        <ul class="mt-5 space-y-3 text-sm" style="opacity:0.7">
+          <li>12 Avenue des Lumières</li><li>75008 Paris</li>
+          <li class="pt-2">+33 1 23 45 67 89</li><li>concierge@maisonlumiere.fr</li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(246,241,231,0.1)">
+      <div class="mx-auto max-w-7xl px-6 lg:px-12 py-6 text-xs text-center" style="opacity:0.4">© 2026 Maison Lumière</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

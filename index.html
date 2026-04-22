@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Lumière — Hôtel de luxe & Spa à Paris</title>
+  <meta name="description" content="Maison Lumière, hôtel 5 étoiles d'exception au cœur de Paris. Suites raffinées, spa, gastronomie et service sur-mesure." />
+  <meta property="og:title" content="Maison Lumière — Hôtel de luxe & Spa" />
+  <meta property="og:description" content="Une parenthèse intemporelle au cœur de l'élégance parisienne." />
+  <meta property="og:image" content="assets/images/hero-hotel.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 flex items-center justify-between h-20">
+      <a href="index.html" class="flex flex-col leading-none">
+        <span class="brand-name font-serif text-2xl tracking-wide">Maison Lumière</span>
+        <span class="eyebrow mt-1" style="font-size:0.55rem">Hôtel & Spa</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html" data-nav="index.html" class="nav-link">Accueil</a>
+        <a href="suites.html" data-nav="suites.html" class="nav-link">Suites</a>
+        <a href="reservation.html" data-nav="reservation.html" class="nav-link">Réservation</a>
+        <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="reservation.html" class="desktop-cta">Réserver</a>
+      <button class="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu mobile-only">
+    <span class="eyebrow">Maison Lumière</span>
+    <nav class="flex flex-col items-center gap-8">
+      <a href="index.html" class="menu-link">Accueil</a>
+      <a href="suites.html" class="menu-link">Suites</a>
+      <a href="reservation.html" class="menu-link">Réservation</a>
+      <a href="contact.html" class="menu-link">Contact</a>
+    </nav>
+    <a href="reservation.html" class="btn-dark mt-6">Réserver maintenant</a>
+    <div class="menu-contact">
+      +33 1 23 45 67 89<br />
+      concierge@maisonlumiere.fr
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <img src="assets/images/hero-hotel.jpg" alt="Façade de l'hôtel Maison Lumière au crépuscule"
+         class="absolute inset-0 w-full h-full object-cover animate-fade-in" style="transform:scale(1.05)" />
+    <div class="absolute inset-0" style="background:rgba(26,23,20,0.5)"></div>
+    <div class="absolute inset-0 bg-gradient-dark"></div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+      <span class="eyebrow animate-fade-up">Hôtel · Spa · Gastronomie</span>
+      <h1 class="mt-6 font-serif text-ivory text-5xl md:text-7xl lg:text-8xl max-w-4xl animate-fade-up" style="animation-delay:0.15s">
+        L'art de recevoir,<br />redéfini.
+      </h1>
+      <p class="mt-8 text-ivory max-w-xl text-lg font-light animate-fade-up" style="animation-delay:0.3s; opacity:0.8">
+        Une adresse confidentielle où chaque instant devient mémoire.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4 animate-fade-up" style="animation-delay:0.45s">
+        <a href="reservation.html" class="btn-primary">Réserver un séjour</a>
+        <a href="suites.html" class="btn-outline-light">Découvrir les suites</a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-ivory text-xs uppercase animate-fade-in" style="letter-spacing:0.3em; opacity:0.6">Défiler</div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-32 px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="eyebrow">Bienvenue</span>
+      <h2 class="mt-6 text-4xl md:text-5xl">Un sanctuaire d'élégance au cœur de Paris</h2>
+      <span class="gold-divider mt-8"></span>
+      <p class="mt-8 text-muted-fg text-lg">
+        Niché dans un hôtel particulier du XIXᵉ siècle, Maison Lumière conjugue patrimoine architectural et art de vivre contemporain. Vingt-quatre suites uniques, un spa d'exception et une table étoilée vous attendent pour un séjour hors du temps.
+      </p>
+    </div>
+  </section>
+
+  <!-- SUITES -->
+  <section class="py-24 px-6 bg-muted">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+        <div>
+          <span class="eyebrow">Hébergement</span>
+          <h2 class="mt-4 text-4xl md:text-5xl">Nos suites signatures</h2>
+        </div>
+        <a href="suites.html" class="text-xs uppercase tracking-widest border-b border-gold pb-1 hover:text-gold transition-elegant" style="letter-spacing:0.3em">Toutes les suites →</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="group">
+          <div class="image-zoom aspect-4-5"><img src="assets/images/suite-junior.jpg" alt="Suite Junior" loading="lazy" /></div>
+          <div class="pt-6">
+            <div class="flex items-baseline justify-between">
+              <h3 class="font-serif text-2xl">Suite Junior</h3>
+              <span class="text-gold text-sm">Dès 480€</span>
+            </div>
+            <p class="mt-3 text-sm text-muted-fg">Élégance contemporaine baignée de lumière naturelle.</p>
+            <a href="reservation.html" class="mt-5 inline-block text-xs uppercase border-b border-onyx pb-1 hover:text-gold transition-elegant" style="letter-spacing:0.3em">Réserver</a>
+          </div>
+        </article>
+        <article class="group">
+          <div class="image-zoom aspect-4-5"><img src="assets/images/suite-deluxe.jpg" alt="Suite Deluxe" loading="lazy" /></div>
+          <div class="pt-6">
+            <div class="flex items-baseline justify-between">
+              <h3 class="font-serif text-2xl">Suite Deluxe</h3>
+              <span class="text-gold text-sm">Dès 780€</span>
+            </div>
+            <p class="mt-3 text-sm text-muted-fg">Vue panoramique, marbre et raffinement absolu.</p>
+            <a href="reservation.html" class="mt-5 inline-block text-xs uppercase border-b border-onyx pb-1 hover:text-gold transition-elegant" style="letter-spacing:0.3em">Réserver</a>
+          </div>
+        </article>
+        <article class="group">
+          <div class="image-zoom aspect-4-5"><img src="assets/images/suite-presidential.jpg" alt="Suite Présidentielle" loading="lazy" /></div>
+          <div class="pt-6">
+            <div class="flex items-baseline justify-between">
+              <h3 class="font-serif text-2xl">Suite Présidentielle</h3>
+              <span class="text-gold text-sm">Dès 1 950€</span>
+            </div>
+            <p class="mt-3 text-sm text-muted-fg">L'apogée du luxe, salon privé et majordome dédié.</p>
+            <a href="reservation.html" class="mt-5 inline-block text-xs uppercase border-b border-onyx pb-1 hover:text-gold transition-elegant" style="letter-spacing:0.3em">Réserver</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-32 px-6">
+    <div class="mx-auto max-w-7xl">
+      <div class="text-center mb-20">
+        <span class="eyebrow">Expériences</span>
+        <h2 class="mt-4 text-4xl md:text-5xl">L'excellence au quotidien</h2>
+        <span class="gold-divider mt-8"></span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="relative group overflow-hidden aspect-3-4">
+          <img src="assets/images/service-pool.jpg" alt="Piscine & Spa" loading="lazy"
+               class="absolute inset-0 w-full h-full object-cover transition-elegant group-hover:scale-110" />
+          <div class="absolute inset-0" style="background:rgba(26,23,20,0.4)"></div>
+          <div class="absolute inset-0 bg-gradient-dark"></div>
+          <div class="relative h-full flex flex-col justify-end p-8 text-ivory">
+            <h3 class="font-serif text-3xl">Piscine & Spa</h3>
+            <p class="mt-3 text-sm" style="opacity:0.8">Infinity pool et soins signature dans un écrin de sérénité.</p>
+          </div>
+        </article>
+        <article class="relative group overflow-hidden aspect-3-4">
+          <img src="assets/images/service-spa.jpg" alt="Spa Holistique" loading="lazy"
+               class="absolute inset-0 w-full h-full object-cover transition-elegant group-hover:scale-110" />
+          <div class="absolute inset-0" style="background:rgba(26,23,20,0.4)"></div>
+          <div class="absolute inset-0 bg-gradient-dark"></div>
+          <div class="relative h-full flex flex-col justify-end p-8 text-ivory">
+            <h3 class="font-serif text-3xl">Spa Holistique</h3>
+            <p class="mt-3 text-sm" style="opacity:0.8">Rituels ancestraux et thérapeutes d'exception.</p>
+          </div>
+        </article>
+        <article class="relative group overflow-hidden aspect-3-4">
+          <img src="assets/images/service-dining.jpg" alt="Gastronomie" loading="lazy"
+               class="absolute inset-0 w-full h-full object-cover transition-elegant group-hover:scale-110" />
+          <div class="absolute inset-0" style="background:rgba(26,23,20,0.4)"></div>
+          <div class="absolute inset-0 bg-gradient-dark"></div>
+          <div class="relative h-full flex flex-col justify-end p-8 text-ivory">
+            <h3 class="font-serif text-3xl">Gastronomie</h3>
+            <p class="mt-3 text-sm" style="opacity:0.8">Table étoilée, cave d'auteur, expérience inoubliable.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="py-32 px-6">
+    <div class="mx-auto max-w-7xl">
+      <div class="text-center mb-16">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="mt-4 text-4xl md:text-5xl">L'âme de la maison</h2>
+        <span class="gold-divider mt-8"></span>
+        <p class="mt-6 text-muted-fg max-w-xl mx-auto">Une promenade visuelle à travers nos espaces les plus emblématiques.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-3" style="grid-auto-rows:14rem">
+        <figure class="relative overflow-hidden image-zoom md:col-span-2" style="grid-row:span 2">
+          <img src="assets/images/gallery-lobby.jpg" alt="Le Grand Hall" loading="lazy" />
+        </figure>
+        <figure class="relative overflow-hidden image-zoom"><img src="assets/images/gallery-terrace.jpg" alt="Rooftop Paris" loading="lazy" /></figure>
+        <figure class="relative overflow-hidden image-zoom"><img src="assets/images/gallery-bathroom.jpg" alt="Salles de bain en marbre" loading="lazy" /></figure>
+        <figure class="relative overflow-hidden image-zoom"><img src="assets/images/gallery-cuisine.jpg" alt="Table étoilée" loading="lazy" /></figure>
+        <figure class="relative overflow-hidden image-zoom"><img src="assets/images/gallery-cellar.jpg" alt="Cave d'auteur" loading="lazy" /></figure>
+        <figure class="relative overflow-hidden image-zoom md:col-span-2"><img src="assets/images/gallery-garden.jpg" alt="Jardin intérieur" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-32 px-6 bg-onyx text-ivory">
+    <div class="mx-auto max-w-5xl">
+      <div class="text-center mb-16">
+        <span class="eyebrow">Témoignages</span>
+        <h2 class="mt-4 text-4xl md:text-5xl">L'émotion de nos hôtes</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-12">
+        <figure class="text-center">
+          <div class="text-gold font-serif text-5xl">"</div>
+          <blockquote class="mt-4 font-serif text-xl italic" style="opacity:0.9">Un séjour d'une élégance rare. Chaque détail a été pensé avec un soin remarquable.</blockquote>
+          <figcaption class="mt-6 text-xs uppercase" style="letter-spacing:0.3em; opacity:0.6">— Isabelle R. · Paris</figcaption>
+        </figure>
+        <figure class="text-center">
+          <div class="text-gold font-serif text-5xl">"</div>
+          <blockquote class="mt-4 font-serif text-xl italic" style="opacity:0.9">The most exquisite hotel experience I have had in Europe. Impeccable service.</blockquote>
+          <figcaption class="mt-6 text-xs uppercase" style="letter-spacing:0.3em; opacity:0.6">— James W. · London</figcaption>
+        </figure>
+        <figure class="text-center">
+          <div class="text-gold font-serif text-5xl">"</div>
+          <blockquote class="mt-4 font-serif text-xl italic" style="opacity:0.9">Discrétion, raffinement et émotion. Maison Lumière redéfinit le luxe.</blockquote>
+          <figcaption class="mt-6 text-xs uppercase" style="letter-spacing:0.3em; opacity:0.6">— Sofia M. · Milano</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-32 px-6 overflow-hidden">
+    <img src="assets/images/hero-hotel.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:rgba(26,23,20,0.75)"></div>
+    <div class="relative z-10 text-center text-ivory max-w-2xl mx-auto">
+      <span class="eyebrow">Réservation</span>
+      <h2 class="mt-6 text-4xl md:text-5xl">Préparez votre séjour</h2>
+      <p class="mt-6" style="opacity:0.8">Notre conciergerie privée se tient à votre disposition pour composer une expérience à votre image.</p>
+      <a href="reservation.html" class="btn-primary mt-10">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 py-20 grid md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <div class="font-serif text-3xl">Maison Lumière</div>
+        <p class="mt-4 text-sm max-w-sm" style="opacity:0.6">Une parenthèse intemporelle au cœur de l'élégance. Hospitalité raffinée, confort absolu, expériences sur-mesure.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:rgba(246,241,231,0.6)">Navigation</div>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="suites.html">Suites</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:rgba(246,241,231,0.6)">Contact</div>
+        <ul class="mt-5 space-y-3 text-sm" style="opacity:0.7">
+          <li>12 Avenue des Lumières</li>
+          <li>75008 Paris, France</li>
+          <li class="pt-2">+33 1 23 45 67 89</li>
+          <li>concierge@maisonlumiere.fr</li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(246,241,231,0.1)">
+      <div class="mx-auto max-w-7xl px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between text-xs" style="opacity:0.4">
+        <span>© 2026 Maison Lumière. Tous droits réservés.</span>
+        <span class="uppercase" style="letter-spacing:0.2em">Hôtel 5 étoiles · Paris</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
